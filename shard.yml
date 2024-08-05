@@ -1,0 +1,20 @@
+name: data_cli
+version: 0.1.0
+
+authors:
+  - JoshuaWoods <nordev@protonmail.com>
+
+targets:
+  data_cli:
+    main: src/data_cli.cr
+
+dependencies:
+  yaml_mapping:
+    github: crystallabs/yaml_mapping.cr
+  json_mapping:
+    github: icyleaf/json_mapping.cr
+
+
+crystal: '>= 1.13.1'
+
+license: MIT
