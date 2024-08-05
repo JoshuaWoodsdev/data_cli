@@ -1,26 +1,29 @@
-# TODO: Write documentation for `DataCli`
+require "./version"
+require "./cli/commands"
+require "./cli/options"
+require "./cli/host"
+require "./cli/helpers"
+require "json"
+require "yaml"
+require "option_parser"
+require "kemal" # For local hosting
+
 module DataCli
-  VERSION = "0.1.0"
+#this is a class, the main app  
+ class Cli
+   def initialize
+    @data_folder = "./data"
+ end
+    
+ def run
+      # Code for setting up and parsing command-line options will go here
+      #needs to add, delete , list, get host
+    parser = OptionParser.new do |parser|
+        parser.banner = "Usage: data_cli [options]"
 
-  #Module and Version Definition
-  class CLI 
-    def  initialize
-       @data_folder = "./data"
+        
+
+
     end
-   
 
-  #Class Definition
-   def run  
-   
-  
-  
-  
-  end
-  
-  #Initialization
-  
-  #Public Methods
-  
-  #Private Helper Methods
-  
-  #Main Entry Point
+end
